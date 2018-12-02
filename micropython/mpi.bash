@@ -1,12 +1,15 @@
 #!/bin/bash
 #
-# upload_and_run.bash
+# mpi.bash
 #
 # v0.0.1 - 2012-12-01 - nelbren.com
+# v0.0.2 - 2012-12-02 - nelbren.com
 #
 
 use() {
   myself=$(basename $0)
+  echo "MicroPython Interface Wrapper"
+  echo ""
   echo "Usage: "
   echo "       $myself [OPTION]..."
   echo ""
@@ -152,11 +155,11 @@ get_firmware() {
 get_code() {
   code=shift_cipher.py
   echo -n "${code}..."
-  if [ -r resources/$code ]; then
+  if [ -r mysources/$code ]; then
     echo "DONE."
   else
     echo "getting:"
-    wget $url2/$code -O resources/$code
+    wget $url2/$code -O mysources/$code
   fi
 }
 
