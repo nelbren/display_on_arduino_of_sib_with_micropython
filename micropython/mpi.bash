@@ -68,7 +68,7 @@ get_driver() {
 
 config() {
   if [ ! -x cfg.bash ]; then
-    echo "Please rename 'cfg.bash.example' to 'cfg.bash', and change wifi and port config"
+    echo "Please copy 'cfg.bash.example' to 'cfg.bash', and change wifi and port config"
     exit 1 
   fi
   . cfg.bash
