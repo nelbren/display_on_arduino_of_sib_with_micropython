@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# config.bash
+#
+# v0.0.1 - 2018-11-30 - nelbren.com
+#
+
+main_ssid=CHANGE-TO-YOUR-SSID
+main_pass=CHANGE-TO-YOUR-PASSWORD
+
+port=/dev/cu.SLAB_USBtoUART

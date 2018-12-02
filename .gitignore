@@ -1,0 +1,3 @@
+.DS_Store
+micropython/cfg.bash
+micropython/mysources/wifi.py
